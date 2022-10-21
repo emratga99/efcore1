@@ -1,7 +1,7 @@
 using efcore2.DTOs;
 using efcore2.Model;
 using efcore2.Repositories;
-using System.Linq.Expressions;  
+using System.Linq.Expressions;
 
 namespace efcore2.Services
 {
@@ -104,6 +104,7 @@ namespace efcore2.Services
                 State = updateModel.State
             };
         }
+
         public bool Delete(int id)
         {
             var student = _studentRepository.Get(x => x.Id == id);
